@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eShop | Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">eShop</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <header class="cart-header">
+    <h1>Checkout</h1>
+    <p>Enter your shipping and payment details</p>
+  </header>
+
+  <section class="checkout-form">
+    <form onsubmit="handleCheckout(event)">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Shipping Address" required />
+      <input type="text" placeholder="Card Number" required />
+      <input type="text" placeholder="MM/YY" required />
+      <input type="text" placeholder="CVV" required />
+      <button type="submit" class="btn">Place Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 eShop by Karthik Yejjala</p>
+  </footer>
+
+  <script>
+    function handleCheckout(e) {
+      e.preventDefault();
+      alert("This is a demo checkout. Your order has been 'placed' 🎉");
+      localStorage.removeItem("cart");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>

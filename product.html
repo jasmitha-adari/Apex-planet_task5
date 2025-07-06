@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eShop | Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">eShop</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <header class="products-header">
+    <h1>Browse Products</h1>
+    <p>Use the filters below to find exactly what you're looking for</p>
+  </header>
+
+  <section class="filters">
+    <select id="categoryFilter">
+      <option value="">All Categories</option>
+      <option value="Clothing">Clothing</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Books">Books</option>
+      <option value="Home & Kitchen">Home & Kitchen</option>
+      <option value="Beauty">Beauty</option>
+      <option value="Toys">Toys</option>
+    </select>
+
+    <select id="ratingFilter">
+      <option value="">All Ratings</option>
+      <option value="5">5 ⭐</option>
+      <option value="4">4 ⭐ & up</option>
+      <option value="3">3 ⭐ & up</option>
+    </select>
+
+    <select id="priceFilter">
+      <option value="">All Prices</option>
+      <option value="low">Below ₹500</option>
+      <option value="mid">₹500–₹1000</option>
+      <option value="high">Above ₹1000</option>
+    </select>
+  </section>
+
+  <section id="productList" class="product-grid">
+    <!-- Products will be generated here by products.js -->
+  </section>
+
+  <footer>
+    <p>© 2025 eShop by Jasmitha</p>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

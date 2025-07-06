@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eShop | Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">eShop</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <header class="cart-header">
+    <h1>Your Shopping Cart</h1>
+    <p>Review your items and proceed to checkout.</p>
+  </header>
+
+  <section id="cartItems" class="cart-items">
+    <!-- Cart items will be rendered here via script.js -->
+  </section>
+
+  <section class="cart-summary">
+    <h3>Total: ₹<span id="cartTotal">0</span></h3>
+    <button class="btn" onclick="checkout()">Proceed to Checkout</button>
+  </section>
+
+  <footer>
+    <p>© 2025 eShop by Jasmitha</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
